@@ -1,0 +1,38 @@
+.email-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  background-color: rgba(201, 160, 153, 0);
+  width: 50%;
+  border: none; }
+  .email-modal:focus {
+    outline: 0; }
+
+.desc {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 20px; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(201, 160, 153, 0.7); }
+
+.close-icon {
+  color: white;
+  float: right;
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px); }
+  .close-icon:hover {
+    cursor: pointer; }
+
+@media (min-width: 50px) and (max-width: 550px) {
+  .email-modal {
+    width: 90%; } }

@@ -1,0 +1,65 @@
+.form {
+  color: white;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 75vh;
+  width: 100%;
+  overflow: hidden; }
+  .form .title {
+    margin-bottom: 20px; }
+  .form .desc {
+    font-size: 12px;
+    font-weight: lighter;
+    opacity: 0.7; }
+  .form .input-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%; }
+    .form .input-container .label {
+      width: 47%; }
+      .form .input-container .label .input {
+        width: 100%;
+        height: 40px;
+        border: 0;
+        padding-left: 3px; }
+    .form .input-container .label2 {
+      width: 100%; }
+      .form .input-container .label2 .input2 {
+        width: 100%;
+        height: 40px;
+        border: 0;
+        padding-left: 3px; }
+  .form .button {
+    margin-top: 5px;
+    height: 43px;
+    background-color: rgba(201, 160, 153, 0);
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%; }
+    .form .button:hover {
+      color: black;
+      background-color: white; }
+
+input[type="text"],
+input[type="email"] {
+  font-size: 16px; }

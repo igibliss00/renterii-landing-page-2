@@ -1,0 +1,80 @@
+.form {
+    color: white;   
+    font-size: 20px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75vh;
+    width: 100%;
+    overflow: hidden;
+    .title {
+        margin-bottom: 20px;
+    }
+    .desc {
+        font-size: 12px;
+        font-weight: lighter;
+        opacity: 0.7;
+    } 
+    .input-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        .label {
+            width: 47%;            
+            .input {
+                width: 100%;
+                height: 40px;
+                // border-radius: 5px;
+                border: 0; 
+                padding-left: 3px;      
+            }
+        }
+        .label2 {
+            width: 100%;
+            .input2 {
+                width: 100%;
+                height: 40px;
+                // border-radius: 5px;
+                border: 0;
+                padding-left: 3px;                  
+            }
+        }
+    } 
+    .button {
+        margin-top: 5px;
+        height: 43px;
+        background-color: rgba(201,160,153, 0);
+        padding: 10px;
+        color: white;
+        border: 2px solid white;
+        font-size: 15px;  
+        font-weight: bold;
+        width: 100%;        
+        &:hover {
+            color: black;
+            background-color: white;
+        }
+    }
+}
+
+@media (min-width: 50px) and (max-width: 550px) {
+    .form {
+        .input-container {
+            // .label {
+            //     width: 90%;
+            // }
+            // .input {
+            //     width: 90%;
+            // }
+            // .input2 {
+            //     width: 80%;
+            // }
+        }
+    }
+}   
+
+input[type="text"],
+input[type="email"] {
+    font-size: 16px;
+}
