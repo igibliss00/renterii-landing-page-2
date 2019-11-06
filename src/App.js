@@ -83,8 +83,8 @@ function App() {
         <div className="fullscreen-video-wrap">
           <video playsInline loop autoPlay muted poster="./media/renterii_190505_landingpg_bg.jpg">
               <source src={require("./media/renterii-web-mobile-cmp.mp4")} type="video/mp4" />
-              <source src={require("./media/renterii-web-mobile-cmp.webm")} type="video/webm" />
-              <source src={require("./media/renterii-web-mobile-cmp.ogv")} type="video/ogg" />
+              <source src={require("./media/renterii-web-mobile.webm")} type="video/webm" />
+              <source src={require("./media/renterii-web-mobile.ogv")} type="video/ogg" />
               <img src={require("./media/renterii_190505_landingpg_bg.jpg")} alt=""/>
               Your browser does not support the video tag. I suggest you upgrade your browser.
           </video>            
@@ -95,8 +95,8 @@ function App() {
         <div className="fullscreen-video-wrap">
           <video playsInline loop autoPlay muted poster="./media/renterii_190505_landingpg_bg.jpg">
               <source src={require("./media/renterii-web-nologo-720cmp.mp4")} type="video/mp4" />
-              <source src={require("./media/renterii-web-720cmp.webm")} type="video/webm" />
-              <source src={require("./media/renterii-web-720cmp.ogv")} type="video/ogg" />
+              <source src={require("./media/renterii-web-desktop.webm")} type="video/webm" />
+              <source src={require("./media/renterii-web-desktop.ogv")} type="video/ogg" />
               <img src={require("./media/renterii_190505_landingpg_bg.jpg")} alt=""/>
               Your browser does not support the video tag. I suggest you upgrade your browser.
           </video>            
