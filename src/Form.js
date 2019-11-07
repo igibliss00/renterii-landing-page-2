@@ -4,6 +4,7 @@ import axios from 'axios'
 import './style/Form.css'
 
 const ROOT_URL = 'https://us-central1-renterii-landing-page.cloudfunctions.net'
+// const ROOT_URL = 'http://localhost:5001/renterii-landing-page/us-central1'
 
 const Form = ({ closeModal }) => {
     const [email, setEmail] = useState('')
@@ -24,15 +25,19 @@ const Form = ({ closeModal }) => {
     //     .finally(closeModal())
     // }
 
+    
+
     const handleSubmit = e => {
+        console.log("email", email)
         setLoading(true)                
         e.preventDefault()  
-        axios.post(`${ROOT_URL}/createEmailList`, {
-              email,
-              firstName,
-              lastName
+    
+        axios.post(`${ROOT_URL}/myWebHook`, {
+            email,
+            firstName,
+            lastName
         })
-        .then(res=> { 
+        .then(res => { 
             if(res.status===200 || res.status===204){
                 setLoading(false)
                 closeModal()
@@ -40,6 +45,31 @@ const Form = ({ closeModal }) => {
         })
         .catch(err=> console.log(err));
     }
+
+    // const handleSubmit = e => {
+    //     console.log("email", email)
+    //     setLoading(true)                
+    //     e.preventDefault()  
+    //     axios.all([
+    //         axios.post(`${ROOT_URL}/createEmailList`, {
+    //             email,
+    //             firstName,
+    //             lastName
+    //         }),
+    //         axios.post(`${ROOT_URL}/zohoCrmHook`, {
+    //             email,
+    //             firstName,
+    //             lastName
+    //         })
+    //     ])
+    //     .then(axios.spread((emailRes, crmRes) => { 
+    //         if(emailRes.status===200 || emailRes.status===204 || crmRes.status===200 || crmRes.status===204 || crmRes.status===201){
+    //             setLoading(false)
+    //             closeModal()
+    //         } 
+    //     }))
+    //     .catch(err=> console.log(err));
+    // }
 
     return (
         <form 
